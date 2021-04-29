@@ -1,9 +1,8 @@
-<div>
-  <div>
-    <div><span>#</span>{{ invoice.id }}</div>
-    <div>Due {{ invoice.paymentDue | date }}</div>
-    <div>{{ invoice.clientName }}</div>
-    <div>{{ invoice.total }}</div>
-    <div>{{ invoice.status }}</div>
-  </div>
+<div class="invoice-card-container">
+  <div class="item invoice-id"><span>#</span>{{ invoice.id }}</div>
+  <div class="item invoice-paymentDue">Due {{ invoice.paymentDue | date }}</div>
+  <div class="item invoice-name">{{ invoice.clientName }}</div>
+  <div class="item invoice-total">{{ invoice.total | currency: "EUR" }}</div>
+  <div class="item invoice-status">{{ invoice.status }}</div>
+  <div class="item placeholder"></div>
 </div>

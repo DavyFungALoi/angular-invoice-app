@@ -1,0 +1,35 @@
+@import "../../../styles.scss";
+
+.invoice-card-container {
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-areas:
+    "id name"
+    "paymentDue status"
+    "total placeholder";
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+.item {
+  border: 1px solid yellow;
+}
+.invoice-id {
+  grid-area: id;
+}
+.invoice-name {
+  grid-area: name;
+}
+.invoice-paymentDue {
+  grid-area: paymentDue;
+}
+.invoice-total {
+  grid-area: total;
+}
+.invoice-status {
+  grid-area: status;
+}
+.placeholder {
+  grid-area: placeholder;
+}
