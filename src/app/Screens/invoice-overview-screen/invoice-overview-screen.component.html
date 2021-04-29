@@ -1,6 +1,11 @@
 <div class="main">
   <div class="container">
     <app-invoice-overview-header></app-invoice-overview-header>
-    <div>invoice-overview-screen works!</div>
+    <div class="invoice-list-container">
+      <app-invoice-card
+        *ngFor="let invoice of invoices"
+        [invoice]="invoice"
+      ></app-invoice-card>
+    </div>
   </div>
 </div>

@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { InvoiceOverviewScreenComponent } from './Screens/invoice-overview-screen/invoice-overview-screen.component';
 import { InvoiceOverviewHeaderComponent } from './components/invoice-overview-header/invoice-overview-header.component';
+import { InvoiceCardComponent } from './components/invoice-card/invoice-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     InvoiceOverviewScreenComponent,
-    InvoiceOverviewHeaderComponent
+    InvoiceOverviewHeaderComponent,
+    InvoiceCardComponent
   ],
   imports: [
     BrowserModule,
