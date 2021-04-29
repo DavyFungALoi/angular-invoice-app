@@ -11,13 +11,16 @@ $font-line-height-secondary: 1.125rem;
 
 ///Dark Theme
 $background-color-primary: #141625;
-$font-color-primary: #D1D3D4;
+$font-color-primary: #d1d3d4;
+$font-color-secondary: #ffffff;
+$font-color-three: rgba(223, 227, 250, 1);
+
+$h2-color-primary: rgba(255, 255, 255, 1);
 
 ///Light Theme
 /*
 color: #0C0E16
 */
-
 body {
   margin: 0;
   padding: 0;
@@ -33,8 +36,9 @@ h1 {
 h2 {
   font-size: 1.25rem;
   line-height: 1.375rem;
+  color: $h2-color-primary;
 }
 h3 {
-  font-size: 0.0625rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
