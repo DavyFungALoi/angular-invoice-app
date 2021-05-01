@@ -1,11 +1,11 @@
 @import "../../../styles.scss";
 
 .main {
-  background-color: #141625;
+  background-color: $background-color-primary;
   color: $font-color-primary;
   padding-bottom: 20px;
 }
-.container{
+.container {
   width: 85%;
   margin: 0 auto;
 }

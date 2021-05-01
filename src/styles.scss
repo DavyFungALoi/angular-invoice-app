@@ -10,18 +10,37 @@ $font-line-height-primary: 0.9375rem;
 $font-line-height-secondary: 1.125rem;
 
 ///Dark Theme
+
 $background-color-primary: #141625;
 $background-color-secondary: #1e2139;
 $font-color-primary: #d1d3d4;
 $font-color-secondary: #ffffff;
-$font-color-three: rgba(223, 227, 250, 1);
-
+$font-color-small-text: rgba(223, 227, 250, 1);
 $h2-color-primary: rgba(255, 255, 255, 1);
+$draft-background-color: rgba(223, 227, 250, 0.0571);
+$draft-main-color: #dfe3fa;
+
 
 ///Light Theme
 /*
-color: #0C0E16
+$background-color-primary: #f2f2f2;
+$background-color-secondary: #ffffff;
+$font-color-primary: #d1d3d4;
+$font-color-secondary: #0c0e16;
+$font-color-small-text: rgba(133, 139, 178, 1);
+$h2-color-primary: rgba(255, 255, 255, 1);
+$draft-background-color: rgba(55, 59, 83, 0.0571);
+$draft-main-color: rgba(55, 59, 83, 1);
 */
+/*
+color: #0C0E16
+(126, 136, 195, 1);
+
+
+*/
+
+///payment statusus Ligh
+
 body {
   margin: 0;
   padding: 0;
