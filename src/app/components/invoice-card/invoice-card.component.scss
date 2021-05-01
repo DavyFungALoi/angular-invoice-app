@@ -36,23 +36,54 @@
     font-weight: 700;
   }
   .invoice-status {
+    margin-top: 5px;
+ 
     grid-area: status;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: green;
     padding: 0.8125rem 17%;
-    opacity: 50%;
+    border-radius: 0.375rem;
+
     .invoice-status-text {
       margin-left: 0.5rem;
       line-height: 0.9375rem;
       opacity: 100%;
+      font-weight: 700;
     }
   }
   .placeholder {
     grid-area: placeholder;
   }
 }
-.item {
-  border: 1px solid yellow;
+///colors of statusus
+
+.paid {
+  background-color: rgba(51, 214, 159, 0.0571);
+
+  .invoice-status-text {
+    color: rgba(51, 214, 159, 1);
+  }
+  .oval-small {
+    background-color: rgba(51, 214, 159, 1);
+  }
+}
+.pending {
+  background-color: rgba(255, 143, 0, 0.13);
+  .invoice-status-text {
+    color: #ff8f00;
+  }
+  .oval-small {
+    background-color: #ff8f00;
+  }
+}
+
+.draft {
+  background-color: rgba(223, 227, 250, 0.0571);
+  .invoice-status-text {
+    color: #dfe3fa;
+  }
+  .oval-small {
+    background-color: #dfe3fa;
+  }
 }

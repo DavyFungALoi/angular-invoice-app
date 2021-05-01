@@ -9,6 +9,9 @@ import { Invoice } from '../../models/invoice';
 export class InvoiceCardComponent implements OnInit {
   @Input() invoice: Invoice;
   constructor() {}
-
-  ngOnInit(): void {}
+  invoiceStatusStyle = '';
+  ngOnInit(): void {
+    this.invoiceStatusStyle = this.invoice.status;
+    console.log(this.invoice.status);
+  }
 }
