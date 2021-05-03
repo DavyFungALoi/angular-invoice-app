@@ -7,6 +7,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { InvoiceOverviewScreenComponent } from './Screens/invoice-overview-screen/invoice-overview-screen.component';
 import { InvoiceOverviewHeaderComponent } from './components/invoice-overview-header/invoice-overview-header.component';
 import { InvoiceCardComponent } from './components/invoice-card/invoice-card.component';
+import { InvoiceScreenComponent } from './Screens/invoice-screen/invoice-screen.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InvoiceCardComponent } from './components/invoice-card/invoice-card.com
     HeaderComponent,
     InvoiceOverviewScreenComponent,
     InvoiceOverviewHeaderComponent,
-    InvoiceCardComponent
+    InvoiceCardComponent,
+    InvoiceScreenComponent
   ],
   imports: [
     BrowserModule,
