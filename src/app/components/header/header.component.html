@@ -1,13 +1,26 @@
 <div class="header">
   <img (click)="clickHandler()" src="../../../assets/images/menu-icon.png" />
 
-  <div class="theme-switcher" (click)="themeHandler()"></div>
+  <div
+    class="theme-switcher"
+    *ngIf="
+      (themeService.presentTheme$ | async) == 'theme-light';
+      else moonTemplate
+    "
+    (click)="themeService.changeTheme('theme-dark')"
+  ></div>
+
+  <ng-template #moonTemplate>
+    <!--   dark theme icon -->
+    <div
+      class="theme-switcher"
+      (click)="themeService.changeTheme('theme-light')"
+    ></div>
+  </ng-template>
   <div class="profile-pic">
     <img
       (click)="clickHandler()"
       src="../../../assets/images/userprofile-icon.png"
     />
   </div>
-  <button (click)="themeService.changeTheme('theme-dark')">Dark</button>
-  <button (click)="themeService.changeTheme('theme-light')">Light</button>
 </div>
