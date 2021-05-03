@@ -1,13 +1,79 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-//General Theme
+//Path
+$assetPath: "/assets/images";
 
+//General Theme
 $font-family-primary: Spartan;
 $font-size-primary: 0.75rem;
 $font-size-secondary: 0.6875rem;
 $font-line-height-primary: 0.9375rem;
 $font-line-height-secondary: 1.125rem;
+
+$background-color-primary: var(--primary-bg);
+$background-color-secondary: var(--secondary-bg);
+$font-color-primary: var(--primary-font-color);
+$font-color-secondary: var(--secondary-font-color);
+$font-color-small-text: var(--font-color-small-text);
+$h2-color-primary: var(--h2-color-primary);
+$draft-background-color: var(--draft-background-color);
+$draft-main-color: var(--draft-main-color);
+$theme-switcher-image: var(--theme-switcher-image);
+//var(--theme-switcher-image);
+.theme-light {
+  --primary-bg: #f2f2f2;
+  --secondary-bg: #ffffff;
+  --primary-font-color: #d1d3d4;
+  --secondary-font-color: #0c0e16;
+  --font-color-small-text: rgba(133, 139, 178, 1);
+  --h2-color-primary: rgba(255, 255, 255, 1);
+  --draft-background-color: rgba(55, 59, 83, 0.0571);
+  --draft-main-color: rgba(55, 59, 83, 1);
+  --theme-switcher-image: url(#{$assetPath}/icon-moon.svg);
+}
+.theme-dark {
+  --primary-bg: #141625;
+  --secondary-bg: #1e2139;
+  --primary-font-color: #d1d3d4;
+  --secondary-font-color: #ffffff;
+  --font-color-small-text: rgba(223, 227, 250, 1);
+  --h2-color-primary: rgba(255, 255, 255, 1);
+  --draft-background-color: rgba(223, 227, 250, 0.0571);
+  --draft-main-color: #dfe3fa;
+  --theme-switcher-image: url(#{$assetPath}/icon-sun.svg);
+}
+
+///payment statusus Ligh
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-primary;
+  font-size: $font-size-primary;
+  line-height: $font-line-height-primary;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+h2 {
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  color: $h2-color-primary;
+}
+h3 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.oval-small {
+  width: 8px;
+  height: 8px;
+  background: rgba(51, 214, 159, 1);
+  border-radius: 50%;
+}
 
 ///Dark Theme
 /*
@@ -47,37 +113,8 @@ color: #0C0E16
   $h2-color-primary: rgba(255, 255, 255, 1);
   $draft-background-color: rgba(55, 59, 83, 0.0571);
   $draft-main-color: rgba(55, 59, 83, 1);
-*/
 
-$background-color-primary: var(--primary-bg);
-$background-color-secondary: var(--secondary-bg);
-$font-color-primary: var(--primary-font-color);
-$font-color-secondary: var(--secondary-font-color);
-$font-color-small-text: var(--font-color-small-text);
-$h2-color-primary: var(--h2-color-primary);
-$draft-background-color: var(--draft-background-color);
-$draft-main-color: var(--draft-main-color);
-
-.theme-light {
-  --primary-bg: #f2f2f2;
-  --secondary-bg: #ffffff;
-  --primary-font-color: #d1d3d4;
-  --secondary-font-color: #0c0e16;
-  --font-color-small-text: rgba(133, 139, 178, 1);
-  --h2-color-primary: rgba(255, 255, 255, 1);
-  --draft-background-color: rgba(55, 59, 83, 0.0571);
-  --draft-main-color: rgba(55, 59, 83, 1);
-}
-.theme-dark {
-  --primary-bg: #141625;
-  --secondary-bg: #1e2139;
-  --primary-font-color: #d1d3d4;
-  --secondary-font-color: #ffffff;
-  --font-color-small-text: rgba(223, 227, 250, 1);
-  --h2-color-primary: rgba(255, 255, 255, 1);
-  --draft-background-color: rgba(223, 227, 250, 0.0571);
-  --draft-main-color: #dfe3fa;
-  /*
+    /*
   $background-color-primary: #141625;
   $background-color-secondary: #1e2139;
   $font-color-primary: #d1d3d4;
@@ -87,35 +124,3 @@ $draft-main-color: var(--draft-main-color);
   $draft-background-color: rgba(223, 227, 250, 0.0571);
   $draft-main-color: #dfe3fa;
   */
-}
-
-///payment statusus Ligh
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: $font-family-primary;
-  font-size: $font-size-primary;
-  line-height: $font-line-height-primary;
-}
-
-h1 {
-  font-size: 2rem;
-  line-height: 2.25rem;
-}
-h2 {
-  font-size: 1.25rem;
-  line-height: 1.375rem;
-  color: $h2-color-primary;
-}
-h3 {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.oval-small {
-  width: 8px;
-  height: 8px;
-  background: rgba(51, 214, 159, 1);
-  border-radius: 50%;
-}

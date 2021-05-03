@@ -12,6 +12,10 @@ export class HeaderComponent implements OnInit {
     return a + b;
   }
 
+  themeHandler() : void {
+    console.log("theme")
+  }
+
   clickHandler(): void {
     console.log('hello');
   }

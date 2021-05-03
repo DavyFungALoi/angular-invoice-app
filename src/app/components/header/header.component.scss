@@ -1,13 +1,23 @@
+@import "../../../styles.scss";
+
 .header {
   display: grid;
   grid-template-columns: 4fr 1fr 1fr;
   align-items: center;
-  background-color:#1E2139
-    ///
+  background-color: #1e2139;
+  ///
   ///858BB2
 }
 .profile-pic {
   border-left: 1px solid rgba(73, 78, 110, 1);
   padding: 1.25rem 1.5rem;
 }
+.theme-switcher {
+  width: 20px;
+  height: 20px;
+  background-image: $theme-switcher-image;
+  background-repeat: no-repeat;
+}
 
+//#{$assetPath}
+//background-image: url('/src/assets/images/icon-moon.svg');
