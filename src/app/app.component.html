@@ -1,4 +1,5 @@
-<div class="theme-light">
+<div [class]="themeService.presentTheme$ | async">
+  >
   <app-header></app-header>
   <app-invoice-overview-screen></app-invoice-overview-screen>
 </div>
