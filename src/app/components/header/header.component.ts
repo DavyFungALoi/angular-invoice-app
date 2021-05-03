@@ -12,41 +12,9 @@ export class HeaderComponent implements OnInit {
     return a + b;
   }
 
-  themeHandler(): void {
-    if (this.themeService.presentTheme$) {
-      this.themeService.changeTheme('theme-dark');
-    } else {
-      this.themeService.changeTheme('theme-light');
-    }
-  }
-
   clickHandler(): void {
     console.log('hello');
   }
 
   ngOnInit(): void {}
 }
-
-/*
- <button
-      *ngIf="
-        (themeService.presentTheme$ | async) == 'theme-light';
-        else moonTemplate"
-      (click)="themeService.changeTheme('theme-dark')"
-    >
-      <img src="assets/icons/sunny.svg" alt="light mode" />
-    </button>
-    <ng-template #moonTemplate>
-      <!--   dark theme icon -->
-      <button
-        (click)="themeService.changeTheme('theme-light')"
-      >
-        <img src="assets/icons/moon.svg" alt="dark mode" />
-      </button>
-    </ng-template>
-
-
-
-
-    [class]="themeService.presentTheme$ | async">
-*/
