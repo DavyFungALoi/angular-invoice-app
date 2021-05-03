@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-invoice-screen',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invoice-screen.component.scss']
 })
 export class InvoiceScreenComponent implements OnInit {
-
-  constructor() { }
+  public invoiceId
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+    let id = parseInt(this.route.snapshot.paramMap.get('id'))
+    this.invoiceId=id
   }
 
 }
