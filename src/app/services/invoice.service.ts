@@ -1,9 +1,15 @@
 import { Injectable } from '@angular/core';
+import invoiceData from "../../assets/data/invoiceData.json"
+import { Invoice } from "../models/invoice"
 
+
+///'../../../assets/data/invoiceData.json';
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class InvoiceService {
-
-  constructor() { }
+  constructor() {}
+  getInvoices() {
+    return invoiceData;
+  }
 }

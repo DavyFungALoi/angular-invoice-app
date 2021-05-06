@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import invoiceData from '../../../assets/data/invoiceData.json';
 import { Invoice } from '../../models/invoice';
+import { InvoiceService } from '../../services/invoice.service';
 
 @Component({
   selector: 'app-invoice-overview-screen',
@@ -9,9 +9,9 @@ import { Invoice } from '../../models/invoice';
 })
 export class InvoiceOverviewScreenComponent implements OnInit {
   invoices: Invoice[];
-  constructor() {}
+  constructor(private invoiceService: InvoiceService) {}
 
   ngOnInit(): void {
-    this.invoices = invoiceData;
+    this.invoices = this.invoiceService.getInvoices();
   }
 }
