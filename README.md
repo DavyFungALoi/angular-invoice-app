@@ -1,28 +1,26 @@
 # AngularInvoiceapp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.10.
+This project is based is based off a design by FrontEnd Monitor, the design files can be found here https://www.frontendmentor.io/challenges/invoice-app-i7KaLTQjl
 
-## Development server
+This project is made with Angular and contains:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The following features so far are implemented:
 
-## Code scaffolding
+- Dark/Light Mode, click on the Sun/Moon to switch themes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+- The following is being worked on:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- CRUD operations for creating, reading, deleting and editing invoices.
 
-## Running unit tests
+Concepts used:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+CRUD
+Light/Dark
+Observers
+Services
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Clone the files and install them using NPM, make sure to have angular installed.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
-# angular-invoice-app
+Run NG serve --open to open it
